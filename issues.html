@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="newIssue.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/GithubLogo.png"></div>
+        <input type="text" class="search" placeholder="Search...">
+        <a href="issues.html">Pull requests</a>
+        <a href="issues.html">Issues</a>
+        <a href="issues.html">Marketplace</a>
+        <a href="issues.html">Explore</a>
+        <div class="notifications"></div>
+        <div class="newMenu"></div>
+        <div class="userMenu"></div>
+    </header>
+
+    <div class="mainContainer">
+        <div class="flexRow"> 
+            <div class="repInfo">   
+                <div class="flexRow">
+                    <div class="flexRow"><a href="issues.html" class="userName">userName</a> <span>/</span> <a href="issues.html" class="userName repName">repName</a></div>
+                    <div class="flexRow repInfoButtonsDirection">
+                        <div class="repInfoButton">
+                            <details>
+                                <summary>Sponsor</summary>
+                            </details>
+                        </div>
+                        <div class="repInfoButton">
+                            <details>
+                                <summary>Used by</summary>
+                            </details>
+                            <div class="repInfoButtonCounter">
+                                <a href="issues.html">27</a>
+                            </div>
+                        </div>
+                        <div class="repInfoButton">
+                            <details>
+                                <summary>Watch</summary>
+
+                            </details>
+                            <div class="repInfoButtonCounter">
+                                <a href="issues.html">254</a>
+                            </div>
+                        </div>
+                        <div class="repInfoButton">
+                            <details>
+                                <summary>Star</summary>
+
+                            </details>
+                            <div class="repInfoButtonCounter">
+                                <a href="issues.html">4.9k</a>
+                            </div>
+                        </div>
+                        <div class="repInfoButton">
+                            <details>
+                                <summary>Fork</summary>
+
+                            </details>
+                            <div class="repInfoButtonCounter">
+                                <a href="issues.html">971</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexRow">
+                    <div class="pageSelector">
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Code</span>
+                
+                            </a>
+                        </div>
+                        <div class="selectorButton currentPage">
+                            <a href="issues.html">
+                                <span>Issues</span>
+                                <div class="selectorButtonCounter">
+                                    <span>892</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Pull requests</span>
+                                <div class="selectorButtonCounter">
+                                    <span>93</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Actions</span>
+                
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Projects</span>
+                                <div class="selectorButtonCounter">
+                                    <span>4</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Wiki</span>
+                
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Security</span>
+                                <div class="selectorButtonCounter">
+                                    <span>0</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="selectorButton">
+                            <a href="issues.html">
+                                <span>Insights</span>
+                
+                            </a>
+                        </div>
+                
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="flexRow">
+            <button class="buttonNewIssue" onclick=newIssue()>New issue</button>
+        </div>
+
+        <div class="flexRow mainBody mainBodyIssuesCounterBlock">
+            <div class="flexRow">
+                <div class="issuesCounter issuesCounterSelected">
+                    <a href="issues.html" id="openIssuesCounter">1 Open</a>
+                </div>
+                <div class="issuesCounter">
+                    <a href="issues.html">0 Closed</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainBody" id="mainBody">
+            <div class="issue">
+                <div class="flexRow">
+                    <a href="issues.html" class="issueName">Disappearing beatmaps</a>
+                </div>
+                <div class="flexRow">
+                    <span class="issueInfo">#ofIssue opened by</span>
+                    <a href="issues.html" class="issueInfo">userName</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

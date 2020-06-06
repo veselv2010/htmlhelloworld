@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+header{
+    padding: 16px;
+    display: flex;
+    background: #24292e;
+    flex-flow: row;
+    min-width: 500px;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header a{
+    color: white;
+    margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header a:hover{
+    color: slategrey;
+}
+
+header img{
+    max-width: 32px;
+    margin-right: 16px;
+}
+
+.repInfo{
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    background-color: #fafbfc;
+    border-bottom: 1px solid lightgray;
+}
+
+.userName{
+    color: #0366d6;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-right: 3px;
+}
+
+.repName{
+    font-weight: 600;
+}
+
+.repInfoButtonsDirection{
+    margin-left: auto;
+}
+
+.repInfoButton{
+    display: flex;
+    flex-flow: row;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.repInfoButton details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    line-height: 20px;
+    background-color: rgb(235, 235, 235);
+    border: 2px solid lightgray;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    height: 20px;
+}
+
+.repInfoButton details summary {
+    list-style: none;
+}
+
+.pageSelector{
+    background: #fafbfc;
+    display: flex;
+    flex-flow: row;
+}
+
+.selectorButton{
+    border-top: 3px solid transparent;
+    display: flex;
+    margin: 10px;
+    flex-flow: row;
+}
+
+.selectorButton a{
+    font-weight: 500;
+    display: flex;
+    flex-flow: row;
+    color: #586069;
+}
+
+.selectorButton a div{
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+.selectorButton a:hover{
+    color: darkslategray;
+}
+
+.selectorButtonCounter{
+    background: lightgray;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.currentPage{
+    margin: 0;
+    padding: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    border-top: 3px solid orange;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+
+.currentPage span{
+    color: darkslategray;
+}
+
+.flexRow{
+    display: flex;
+    flex-flow: row;
+}
+
+.mainBody{
+    display: flex;
+    max-width: 1000px;
+    min-width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    flex-flow: column-reverse;
+}
+
+.search{
+    transition: width 0.2s ease-in-out;
+    margin-right: 16px;
+    border-radius: 3px;
+    width: 200px;
+    padding-left: 12px;
+    border: transparent;
+    background-color: rgb(88, 83, 83);
+}
+
+.search:focus{
+    width: 400px;
+}
+
+.mainContainer{
+    min-width: 500px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonNewIssue{
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonNewIssue:hover{
+    background-image: linear-gradient(-140deg, green, gray);
+}
+
+.buttonNewIssue:active{
+    background-image: linear-gradient(-140deg, green, black);
+}
+
+.repInfoButtonCounter a{
+    display: block;
+    padding: 3px 10px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    color: black;
+    height: 20px;
+}
+
+.repInfoButtonCounter a:hover{
+    color: blue;
+}
+
+.mainBodyIssuesCounterBlock{
+    margin-bottom: -1px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #fafbfc;
+}
+
+.issuesCounter{
+    margin: 20px 0px 20px 20px;
+}
+
+.issuesCounter a{
+    font-weight: 500;
+    font-size: 14px;
+    color: gray;
+}
+
+.issuesCounter a:hover{
+    color: #24292e;
+}
+
+.issuesCounterSelected a{
+    font-weight: 600;
+    color: #24292e;
+}
+
+.issue{
+    display: flex;
+    flex-flow: column;
+    padding: 5px 0px 10px 50px;
+    border-top: 1px solid lightgray;
+}
+
+.issueName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #24292e;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.issueName:hover{
+    color: blue;
+}
+
+.issueInfo{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-right: 4px;
+    font-weight: 500;
+}
