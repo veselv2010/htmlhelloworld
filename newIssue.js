@@ -3,21 +3,21 @@ const issues = [
     { name: 'Disappearing beatmaps', isOpen: false },
 ];
 
-function AddNewIssue() {
+function addNewIssue() {
     const issueName = prompt("Issue name", "IssueName");
-    issues[issues.length] = {"name": issueName, "isOpen": "true"};
+    issues.push({name: issueName, isOpen: true});
 
-    RenderIssues();
+    renderIssues();
 }
 
-function DeleteIssue(callerButton){
-    const id = String(callerButton.id).split("_")[1];
+function deleteIssue(callerButton){
+    const id = callerButton.getAttribute("data-id");
     issues.splice(Number(id), 1);
 
-    RenderIssues();
+    renderIssues();
 }
 
-function RenderIssues() {
+function renderIssues() {
     document.getElementById("mainBody").innerHTML = null;
     let openCounter = 0, closedCounter = 0;
     for (const elem in issues) {
@@ -30,7 +30,7 @@ function RenderIssues() {
 
         document.getElementById("mainBody").innerHTML += `<div class='issue'>
             <div class='flexRow'>
-                <img class="deleteIssueButton" src="img/bin.png" id=delete_${elem} onclick=DeleteIssue(this)>
+                <img class="deleteIssueButton" src="img/bin.png" data-id=${elem} onclick="deleteIssue(this)">
                 <a href='issues.html' class='issueName'>${issues[elem].name}</a>
             </div>
             <div class='flexRow'>

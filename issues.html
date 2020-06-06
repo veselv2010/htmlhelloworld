@@ -9,7 +9,7 @@
     <script>
         "use strict"
         document.addEventListener("DOMContentLoaded", () => {
-            RenderIssues()
+            renderIssues()
         });
     </script>
     <script src="newIssue.js"></script>
@@ -144,7 +144,7 @@
         </div>
 
         <div class="flexRow">
-            <button class="buttonNewIssue" onclick=AddNewIssue()>New issue</button>
+            <button class="buttonNewIssue" onclick="addNewIssue()">New issue</button>
         </div>
 
         <div class="flexRow mainBody mainBodyIssuesCounterBlock">
@@ -159,16 +159,7 @@
         </div>
 
         <div class="mainBody" id="mainBody">
-            <div class="issue">
-                <div class="flexRow">
-                    <img class="deleteIssueButton" src="img/bin.png" onclick=DeleteIssue(this)>
-                    <a href="issues.html" class="issueName">Disappearing beatmaps</a>
-                </div>
-                <div class="flexRow">
-                    <span class="issueInfo">#ofIssue opened by</span>
-                    <a href="issues.html" class="issueInfo">userName</a>
-                </div>
-            </div>
+
         </div>
     </div>
 </body>
