@@ -267,3 +267,10 @@ header img{
     margin-right: 4px;
     font-weight: 500;
 }
+
+.deleteIssueButton{
+    margin-left: -35px;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 25px;
+}
