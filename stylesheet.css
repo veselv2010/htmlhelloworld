@@ -1,18 +1,16 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
 header{
     padding: 16px;
-    display: flex;
     background: #24292e;
-    flex-flow: row;
     min-width: 500px;
 }
 
 a{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -34,14 +32,16 @@ header img{
     margin-right: 16px;
 }
 
-.repInfo{
-    padding-top: 25px;
-    width: 100%;
+.flexColumn{
     display: flex;
-    position: relative;
     flex-flow: column;
+}
+
+.topContainer{
     background-color: #fafbfc;
     border-bottom: 1px solid lightgray;
+    padding-top: 25px;
+    width: 100%;
 }
 
 .userName{
@@ -61,14 +61,11 @@ header img{
 }
 
 .repInfoButton{
-    display: flex;
-    flex-flow: row;
     margin-left: 16px;
     cursor: pointer;
 }
 
 .repInfoButton details{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     font-weight: 600;
     padding: 3px 10px;
@@ -86,15 +83,11 @@ header img{
 
 .pageSelector{
     background: #fafbfc;
-    display: flex;
-    flex-flow: row;
 }
 
 .selectorButton{
     border-top: 3px solid transparent;
-    display: flex;
     margin: 10px;
-    flex-flow: row;
 }
 
 .selectorButton a{
@@ -242,14 +235,11 @@ header img{
 }
 
 .issue{
-    display: flex;
-    flex-flow: column;
     padding: 5px 0px 10px 50px;
     border-top: 1px solid lightgray;
 }
 
 .issueName{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #24292e;
     line-height: 30px;
@@ -262,7 +252,6 @@ header img{
 
 .issueInfo{
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
     color: gray;
     margin-right: 4px;
     font-weight: 500;

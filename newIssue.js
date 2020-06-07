@@ -28,7 +28,7 @@ function renderIssues() {
             continue;
         }
 
-        document.getElementById("mainBody").innerHTML += `<div class='issue'>
+        document.getElementById("mainBody").innerHTML += `<div class='issue flexColumn'>
             <div class='flexRow'>
                 <img class="deleteIssueButton" src="img/bin.png" data-id=${elem} onclick="deleteIssue(this)">
                 <a href='issues.html' class='issueName'>${issues[elem].name}</a>
